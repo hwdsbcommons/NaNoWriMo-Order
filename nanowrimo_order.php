@@ -12,7 +12,7 @@ Author URI: http://commons.hwdsb.on.ca
 */
 function hwdsb_nanowrimo_asc_order( $query = false ) {
 // Bail if not on the 'nanowrimo' category page
-if ( ! is_category('nanowrimo') )
+if ( ! is_category('nanowrimo' or 'reverse') )
 return;
 // Set the order to ascending
 $query->set( 'order', 'ASC' );
